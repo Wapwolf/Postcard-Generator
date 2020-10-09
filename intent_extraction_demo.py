@@ -103,7 +103,7 @@ def create_intent_dict(text):
         for token in sentence:
             if token in holiday_list:
                 if token == "рождение":
-                  token = 'день '+ token
+                  token = 'день рождения"
                 if token == "новый":
                   token = token+ " год"
                 intent_dict['holiday'] = token
